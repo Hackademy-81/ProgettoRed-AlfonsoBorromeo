@@ -9,7 +9,7 @@
 }
 
 .img-bg-lorem{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), url(../Red/media/switzerland-862870_1920.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(../Red/media/switzerland-862870_1920.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,5 +31,55 @@ h1 {
     position: absolute;
     bottom: 0px;
     padding-left: 0px;
-    height: 65vh;
+    height: 70vh;
+    width: 94vw;
   }
+
+  .mark-quote-custom{
+    text-align: center;
+    position: relative;
+  }
+
+  .mark-quote-custom::before, .mark-quote-custom::after{
+    font-size: 35px;
+    font-weight:bolder;
+    position:absolute;
+  }
+  .mark-quote-custom::before{
+    content: open-quote;
+    color: darkred;
+    top: -13px;
+    left: 4px;
+   
+}
+
+.mark-quote-custom::after{
+    content: close-quote;
+    color: darkred;
+    bottom: -31px; right: 60px;
+}
+
+.img-underline{
+    height: 55px;
+}
+
+
+.custom-container{
+    margin-top: 10%;
+}
+
+p{
+    font-family: 'Nova Square', cursive;
+    font-weight: lighter;
+}
+
+
+.custom-border{
+    border-bottom: solid 4px darkred;
+    padding-top: 5px;
+}
+
+.custom-border-dot{
+    border-bottom: white solid 20px dotted;
+    padding-top: 5px;
+}
