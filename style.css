@@ -3,32 +3,30 @@
     width: 15vh;
 }
 
-.body{
-    margin: 0px;
-    padding: 0px;
-}
-
 .img-bg-lorem{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(../Red/media/switzerland-862870_1920.jpg);
+    background-image:url(../Red/media/mountains2.png), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../Red/media/switzerland-862870_1920.jpg);
     height: 100vh;
+    width: 100%;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
+    position: relative;
 }
 
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 1vw;
-    color: darkred ;
-    font-size: 100px;
+
+.h1{
     font-family: 'Nova Square', cursive;
+    color: darkred;
+    font-size: 50px;
+    letter-spacing: 40px;
+  }
+  
+  .text-custom{
+    font-family: 'Nova Square', cursive;
+    color: darkred;
   }
 
   .img-mount{
-    position: absolute;
     bottom: 0px;
     padding-left: 0px;
     height: 70vh;
@@ -49,14 +47,14 @@ h1 {
     content: open-quote;
     color: darkred;
     top: -13px;
-    left: 4px;
+    left: -20px;
    
 }
 
 .mark-quote-custom::after{
     content: close-quote;
     color: darkred;
-    bottom: -31px; right: 60px;
+    bottom: -30px; right: -20px;
 }
 
 .img-underline{
@@ -76,10 +74,52 @@ p{
 
 .custom-border{
     border-bottom: solid 4px darkred;
-    padding-top: 5px;
+    padding: 25px;
+    margin: 5px;
+    position: relative;
 }
 
-.custom-border-dot{
-    border-bottom: white solid 20px dotted;
-    padding-top: 5px;
+.custom-border::after{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 130px ;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 3px darkred;
+    border-radius: 50%;
+  }
+
+
+.nav a{
+    color: darkred;
 }
+
+
+.button{
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 20px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Nova Square', cursive;
+  font-weight: lighter;
+}
+
+.bg-custom-body{
+  background-color: rgba(211, 209, 209, 0.886);
+}
+
+.img-bg-button{
+  background-image: url(../Red/media/trees2.png);
+  height: vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
