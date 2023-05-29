@@ -93,33 +93,110 @@ p{
   }
 
 
-.nav a{
-    color: darkred;
-}
-
-
-.button{
+.btn{
   background-color: darkred;
   border: none;
   color: white;
   padding: 20px 55px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 14px;
   font-family: 'Nova Square', cursive;
   font-weight: lighter;
+  position: absolute;
+}
+
+.btn-distance{
+  padding-bottom: 10%;
 }
 
 .bg-custom-body{
-  background-color: rgba(211, 209, 209, 0.886);
+  background-color: #ececec;
 }
 
-.img-bg-button{
-  background-image: url(../Red/media/trees2.png);
-  height: vh;
-  width: 100%;
-  background-size: cover;
+.bg-image-trees{
+  background: url(../Red/media/trees2.png);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding-bottom: 10%;
 }
 
+/* Inizio section con alberi laterali */
+
+.bg-img-trees2{
+  background: url(../Red/media/single.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.custom-border2{
+  border-left: solid 4px darkred;
+  
+  margin: 5px;
+  position: relative;
+}
+
+.custom-border2::after{
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -15px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: solid 3px darkred;
+  border-radius: 50%;
+}
+
+
+/* Fine section con alberi laterali */
+
+/* Inizio section con card */
+
+.card-custom{
+  border-radius: 50%;
+  border: solid 3px darkred;
+}
+
+.card-img-customd{
+  height: 50%;
+  width: 50%;
+}
+
+.bg-alberirossi{
+  background: url(../Red/media/other.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding-bottom: 33%;
+
+}
+
+/* Fine section con card */
+
+/*Inizio Footer */
+
+.bg-footer-custom{
+  background-color: darkred;
+}
+
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer ul {
+  list-style: none; /* Remove default bullets */
+}
+
+footer ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: white; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
