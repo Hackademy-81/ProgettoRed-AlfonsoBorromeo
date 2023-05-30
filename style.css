@@ -83,7 +83,7 @@ p{
     content: "";
     position: absolute;
     top: 60px;
-    left: 130px ;
+    left: 180px;
     background-color: rgb(255, 255, 255);
     display: inline-block;
     width: 30px;
@@ -132,7 +132,6 @@ p{
 
 .custom-border2{
   border-left: solid 4px darkred;
-  
   margin: 5px;
   position: relative;
 }
@@ -200,3 +199,9 @@ footer ul li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+/* Fine Footer */
+
+/* Media query */
+
+
